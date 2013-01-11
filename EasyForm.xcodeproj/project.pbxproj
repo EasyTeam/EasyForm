@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4B0463416A04B1F00DF7C15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B0463316A04B1F00DF7C15 /* UIKit.framework */; };
+		A4B0463616A04B1F00DF7C15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B0463516A04B1F00DF7C15 /* Foundation.framework */; };
+		A4B0463816A04B1F00DF7C15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B0463716A04B1F00DF7C15 /* CoreGraphics.framework */; };
+		A4B0463E16A04B1F00DF7C15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4B0463C16A04B1F00DF7C15 /* InfoPlist.strings */; };
+		A4B0464016A04B1F00DF7C15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0463F16A04B1F00DF7C15 /* main.m */; };
+		A4B0464416A04B1F00DF7C15 /* EFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0464316A04B1F00DF7C15 /* EFAppDelegate.m */; };
+		A4B0464616A04B1F00DF7C15 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B0464516A04B1F00DF7C15 /* Default.png */; };
+		A4B0464816A04B1F00DF7C15 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B0464716A04B1F00DF7C15 /* Default@2x.png */; };
+		A4B0464A16A04B1F00DF7C15 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B0464916A04B1F00DF7C15 /* Default-568h@2x.png */; };
+		A4B0464D16A04B1F00DF7C15 /* EFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0464C16A04B1F00DF7C15 /* EFMainViewController.m */; };
+		A4B0466716A04DE800DF7C15 /* EFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0466616A04DE800DF7C15 /* EFBaseViewController.m */; };
+		A4B0466A16A04E2200DF7C15 /* EFBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0466916A04E2200DF7C15 /* EFBaseCell.m */; };
+		A4B0466D16A04E4500DF7C15 /* EFCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0466C16A04E4500DF7C15 /* EFCellFactory.m */; };
+		A4B0467016A04E7600DF7C15 /* EFPlistLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0466F16A04E7600DF7C15 /* EFPlistLoader.m */; };
+		A4B0467416A04F0D00DF7C15 /* EFLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0467316A04F0D00DF7C15 /* EFLabelCell.m */; };
+		A4B0467716A04F2A00DF7C15 /* EFTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0467616A04F2A00DF7C15 /* EFTextCell.m */; };
+		A4B0467A16A04F5F00DF7C15 /* UserProfiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B0467916A04F5F00DF7C15 /* UserProfiles.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4B0462F16A04B1F00DF7C15 /* EasyForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B0463316A04B1F00DF7C15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A4B0463516A04B1F00DF7C15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4B0463716A04B1F00DF7C15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A4B0463B16A04B1F00DF7C15 /* EasyForm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyForm-Info.plist"; sourceTree = "<group>"; };
+		A4B0463D16A04B1F00DF7C15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4B0463F16A04B1F00DF7C15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4B0464116A04B1F00DF7C15 /* EasyForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyForm-Prefix.pch"; sourceTree = "<group>"; };
+		A4B0464216A04B1F00DF7C15 /* EFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFAppDelegate.h; sourceTree = "<group>"; };
+		A4B0464316A04B1F00DF7C15 /* EFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFAppDelegate.m; sourceTree = "<group>"; };
+		A4B0464516A04B1F00DF7C15 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A4B0464716A04B1F00DF7C15 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A4B0464916A04B1F00DF7C15 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A4B0464B16A04B1F00DF7C15 /* EFMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFMainViewController.h; sourceTree = "<group>"; };
+		A4B0464C16A04B1F00DF7C15 /* EFMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFMainViewController.m; sourceTree = "<group>"; };
+		A4B0466516A04DE800DF7C15 /* EFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseViewController.h; sourceTree = "<group>"; };
+		A4B0466616A04DE800DF7C15 /* EFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseViewController.m; sourceTree = "<group>"; };
+		A4B0466816A04E2200DF7C15 /* EFBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBaseCell.h; sourceTree = "<group>"; };
+		A4B0466916A04E2200DF7C15 /* EFBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBaseCell.m; sourceTree = "<group>"; };
+		A4B0466B16A04E4500DF7C15 /* EFCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCellFactory.h; sourceTree = "<group>"; };
+		A4B0466C16A04E4500DF7C15 /* EFCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCellFactory.m; sourceTree = "<group>"; };
+		A4B0466E16A04E7600DF7C15 /* EFPlistLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPlistLoader.h; sourceTree = "<group>"; };
+		A4B0466F16A04E7600DF7C15 /* EFPlistLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPlistLoader.m; sourceTree = "<group>"; };
+		A4B0467116A04EB500DF7C15 /* EFPreDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFPreDefines.h; sourceTree = "<group>"; };
+		A4B0467216A04F0D00DF7C15 /* EFLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLabelCell.h; sourceTree = "<group>"; };
+		A4B0467316A04F0D00DF7C15 /* EFLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLabelCell.m; sourceTree = "<group>"; };
+		A4B0467516A04F2A00DF7C15 /* EFTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTextCell.h; sourceTree = "<group>"; };
+		A4B0467616A04F2A00DF7C15 /* EFTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTextCell.m; sourceTree = "<group>"; };
+		A4B0467916A04F5F00DF7C15 /* UserProfiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserProfiles.plist; sourceTree = "<group>"; };
+		A4B0467B16A04FDA00DF7C15 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4B0462C16A04B1F00DF7C15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B0463416A04B1F00DF7C15 /* UIKit.framework in Frameworks */,
+				A4B0463616A04B1F00DF7C15 /* Foundation.framework in Frameworks */,
+				A4B0463816A04B1F00DF7C15 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4B0462416A04B1F00DF7C15 = {
+			isa = PBXGroup;
+			children = (
+				A4B0463916A04B1F00DF7C15 /* EasyForm */,
+				A4B0463216A04B1F00DF7C15 /* Frameworks */,
+				A4B0463016A04B1F00DF7C15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4B0463016A04B1F00DF7C15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4B0462F16A04B1F00DF7C15 /* EasyForm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4B0463216A04B1F00DF7C15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4B0463316A04B1F00DF7C15 /* UIKit.framework */,
+				A4B0463516A04B1F00DF7C15 /* Foundation.framework */,
+				A4B0463716A04B1F00DF7C15 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4B0463916A04B1F00DF7C15 /* EasyForm */ = {
+			isa = PBXGroup;
+			children = (
+				A4B0464216A04B1F00DF7C15 /* EFAppDelegate.h */,
+				A4B0464316A04B1F00DF7C15 /* EFAppDelegate.m */,
+				A4B0464B16A04B1F00DF7C15 /* EFMainViewController.h */,
+				A4B0464C16A04B1F00DF7C15 /* EFMainViewController.m */,
+				A4B0466316A04DBC00DF7C15 /* Libs */,
+				A4B0467816A04F5F00DF7C15 /* Resources */,
+				A4B0463A16A04B1F00DF7C15 /* Supporting Files */,
+			);
+			path = EasyForm;
+			sourceTree = "<group>";
+		};
+		A4B0463A16A04B1F00DF7C15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4B0463B16A04B1F00DF7C15 /* EasyForm-Info.plist */,
+				A4B0463C16A04B1F00DF7C15 /* InfoPlist.strings */,
+				A4B0463F16A04B1F00DF7C15 /* main.m */,
+				A4B0464116A04B1F00DF7C15 /* EasyForm-Prefix.pch */,
+				A4B0464516A04B1F00DF7C15 /* Default.png */,
+				A4B0464716A04B1F00DF7C15 /* Default@2x.png */,
+				A4B0464916A04B1F00DF7C15 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4B0466316A04DBC00DF7C15 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A4B0466416A04DBC00DF7C15 /* EasyForm */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		A4B0466416A04DBC00DF7C15 /* EasyForm */ = {
+			isa = PBXGroup;
+			children = (
+				A4B0466516A04DE800DF7C15 /* EFBaseViewController.h */,
+				A4B0466616A04DE800DF7C15 /* EFBaseViewController.m */,
+				A4B0466E16A04E7600DF7C15 /* EFPlistLoader.h */,
+				A4B0466F16A04E7600DF7C15 /* EFPlistLoader.m */,
+				A4B0466816A04E2200DF7C15 /* EFBaseCell.h */,
+				A4B0466916A04E2200DF7C15 /* EFBaseCell.m */,
+				A4B0466B16A04E4500DF7C15 /* EFCellFactory.h */,
+				A4B0466C16A04E4500DF7C15 /* EFCellFactory.m */,
+				A4B0467216A04F0D00DF7C15 /* EFLabelCell.h */,
+				A4B0467316A04F0D00DF7C15 /* EFLabelCell.m */,
+				A4B0467516A04F2A00DF7C15 /* EFTextCell.h */,
+				A4B0467616A04F2A00DF7C15 /* EFTextCell.m */,
+				A4B0467116A04EB500DF7C15 /* EFPreDefines.h */,
+			);
+			path = EasyForm;
+			sourceTree = "<group>";
+		};
+		A4B0467816A04F5F00DF7C15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4B0467916A04F5F00DF7C15 /* UserProfiles.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4B0462E16A04B1F00DF7C15 /* EasyForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B0465C16A04B1F00DF7C15 /* Build configuration list for PBXNativeTarget "EasyForm" */;
+			buildPhases = (
+				A4B0462B16A04B1F00DF7C15 /* Sources */,
+				A4B0462C16A04B1F00DF7C15 /* Frameworks */,
+				A4B0462D16A04B1F00DF7C15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyForm;
+			productName = EasyForm;
+			productReference = A4B0462F16A04B1F00DF7C15 /* EasyForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4B0462616A04B1F00DF7C15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EF;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = EasyTeam;
+			};
+			buildConfigurationList = A4B0462916A04B1F00DF7C15 /* Build configuration list for PBXProject "EasyForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = A4B0462416A04B1F00DF7C15;
+			productRefGroup = A4B0463016A04B1F00DF7C15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4B0462E16A04B1F00DF7C15 /* EasyForm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4B0462D16A04B1F00DF7C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B0463E16A04B1F00DF7C15 /* InfoPlist.strings in Resources */,
+				A4B0464616A04B1F00DF7C15 /* Default.png in Resources */,
+				A4B0464816A04B1F00DF7C15 /* Default@2x.png in Resources */,
+				A4B0464A16A04B1F00DF7C15 /* Default-568h@2x.png in Resources */,
+				A4B0467A16A04F5F00DF7C15 /* UserProfiles.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4B0462B16A04B1F00DF7C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B0464016A04B1F00DF7C15 /* main.m in Sources */,
+				A4B0464416A04B1F00DF7C15 /* EFAppDelegate.m in Sources */,
+				A4B0464D16A04B1F00DF7C15 /* EFMainViewController.m in Sources */,
+				A4B0466716A04DE800DF7C15 /* EFBaseViewController.m in Sources */,
+				A4B0466A16A04E2200DF7C15 /* EFBaseCell.m in Sources */,
+				A4B0466D16A04E4500DF7C15 /* EFCellFactory.m in Sources */,
+				A4B0467016A04E7600DF7C15 /* EFPlistLoader.m in Sources */,
+				A4B0467416A04F0D00DF7C15 /* EFLabelCell.m in Sources */,
+				A4B0467716A04F2A00DF7C15 /* EFTextCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4B0463C16A04B1F00DF7C15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4B0463D16A04B1F00DF7C15 /* en */,
+				A4B0467B16A04FDA00DF7C15 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4B0465A16A04B1F00DF7C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4B0465B16A04B1F00DF7C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4B0465D16A04B1F00DF7C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyForm/EasyForm-Prefix.pch";
+				INFOPLIST_FILE = "EasyForm/EasyForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4B0465E16A04B1F00DF7C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyForm/EasyForm-Prefix.pch";
+				INFOPLIST_FILE = "EasyForm/EasyForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4B0462916A04B1F00DF7C15 /* Build configuration list for PBXProject "EasyForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B0465A16A04B1F00DF7C15 /* Debug */,
+				A4B0465B16A04B1F00DF7C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B0465C16A04B1F00DF7C15 /* Build configuration list for PBXNativeTarget "EasyForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B0465D16A04B1F00DF7C15 /* Debug */,
+				A4B0465E16A04B1F00DF7C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4B0462616A04B1F00DF7C15 /* Project object */;
+}
