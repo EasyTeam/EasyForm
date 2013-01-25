@@ -7,18 +7,44 @@
 //
 
 #import "EFBaseViewController.h"
+#import "EFBaseCell.h"
+#import "EFCellFactory.h"
 
 @interface EFBaseViewController ()
+@property(nonatomic,retain)NSMutableDictionary* styleDict;
+@property(nonatomic,retain) NSString* styleFilePath;
+@property(nonatomic,retain)EFPlistLoader* loader;
 
 @end
 
 @implementation EFBaseViewController
+
+@synthesize dataDict;
+@synthesize styleDict;
+@synthesize styleFilePath;
+@synthesize loader;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.tableView.separatorStyle=UITableViewCellSeparatorStyleSingleLine;
+        self.tableView.backgroundColor=[UIColor whiteColor];
+        self.tableView.backgroundView=nil;
+    }
+    return self;
+}
+
+- (id)initWithPlistFile:(NSString*)fileName
+{
+    self = [super initWithStyle:UITableViewStyleGrouped];
+    if (self) {
+        // Custom initialization
+        NSLog(@"%@",[[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"]);
+        
+        self.styleFilePath=[[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];
+        
     }
     return self;
 }
@@ -26,12 +52,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.loader=[[[EFPlistLoader alloc] initWithFileName:self.styleFilePath] autorelease];
+
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tableReload) name:@"TB_RELOAD" object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,26 +75,36 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return [self.loader numbersOfSection];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
-}
+   return [self.loader numbersOfRowsInSection:section];}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NSMutableDictionary* dict=[self.loader cellDictForRow:indexPath.row inSection:indexPath.section];
     
-    // Configure the cell...
     
+    
+    NSString *CellIdentifier = [NSString stringWithFormat:@"FEBaseCell_%@",[dict objectForKey:@"id"]];
+    // FEBaseCell *cell = nil;
+    
+    EFBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //FEBaseCell *cell =nil;
+    if (cell==nil) {
+        Class cls=[[EFCellFactory sharedClass] classForCellTypeName: [dict objectForKey:@"type"]];
+        cell=[[cls alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.loader=self.loader;
+    }
+    cell.cellDict=dict;
     return cell;
+
 }
 
 /*
@@ -119,4 +160,8 @@
      */
 }
 
+-(void)tableReload
+{
+    [self.tableView reloadData];
+}
 @end

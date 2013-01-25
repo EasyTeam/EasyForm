@@ -14,6 +14,15 @@
 
 @implementation EFMainViewController
 
+- (id)initWithPlistFile:(NSString*)fileName
+{
+    self = [super initWithPlistFile:fileName];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

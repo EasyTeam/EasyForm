@@ -8,6 +8,11 @@
 
 #import "EFBaseCell.h"
 
-@interface EFCellFactory : EFBaseCell
-
+@interface EFCellFactory : NSObject
+{
+    NSMutableDictionary* typeClassDict;
+}
++(EFCellFactory*)sharedClass;
+-(void)registerCellType:(Class)class forKey:(NSString*)key;
+-(Class)classForCellTypeName:(NSString*)key;
 @end

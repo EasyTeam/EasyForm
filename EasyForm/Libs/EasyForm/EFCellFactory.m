@@ -8,24 +8,40 @@
 
 #import "EFCellFactory.h"
 
-@implementation EFCellFactory
+static EFCellFactory* _sharedFECellFactoryInstance;
 
-- (id)initWithFrame:(CGRect)frame
+@interface EFCellFactory ()
+@property(nonatomic,retain)NSMutableDictionary *typeClassDict;
+@end
+
+@implementation EFCellFactory
+@synthesize typeClassDict;
++(EFCellFactory*)sharedClass
 {
-    self = [super initWithFrame:frame];
+    
+    if (_sharedFECellFactoryInstance==nil) {
+        _sharedFECellFactoryInstance=[[EFCellFactory alloc] init];
+    }
+    return  _sharedFECellFactoryInstance;
+    
+}
+- (id)init
+{
+    self = [super init];
     if (self) {
-        // Initialization code
+        _sharedFECellFactoryInstance=self;
+        self.typeClassDict=[NSMutableDictionary dictionary];
     }
     return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+-(void)registerCellType:(Class)class forKey:(NSString*)key;
 {
-    // Drawing code
+    [self.typeClassDict setObject:class forKey:key];
+    
 }
-*/
-
+-(Class)classForCellTypeName:(NSString*)key;
+{
+    Class cls=[self.typeClassDict objectForKey:key];
+    return cls?cls: [EFBaseCell class];
+}
 @end

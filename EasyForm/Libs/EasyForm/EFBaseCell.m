@@ -7,8 +7,26 @@
 //
 
 #import "EFBaseCell.h"
+#import "EFCellFactory.h"
 
 @implementation EFBaseCell
+
+
+@synthesize cellDict;
+@synthesize loader;
+
+//@synthesize typeClassDict;
+
+
+
++(void)load
+{
+    
+}
++(void)registerClass:(Class)cellClass forCellTypeIdentifier:(NSString *)identifier
+{
+    [[EFCellFactory sharedClass] registerCellType:cellClass forKey:identifier];
+}
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

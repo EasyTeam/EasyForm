@@ -8,5 +8,5 @@
 
 #import "EFBaseViewController.h"
 @interface EFMainViewController : EFBaseViewController
-
+- (id)initWithPlistFile:(NSString*)fileName;
 @end

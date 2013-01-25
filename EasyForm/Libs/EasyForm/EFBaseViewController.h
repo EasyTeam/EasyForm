@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EFPlistLoader.h"
 
-@interface EFBaseViewController : UITableViewController
-
+@interface EFBaseViewController : UITableViewController{
+    
+    NSMutableDictionary* dataDict;
+    NSString* styleFilePath;    
+    EFPlistLoader* loader;
+    //NSMutableDictionary* valueDict;
+}
+- (id)initWithPlistFile:(NSString*)fileName;
+@property(nonatomic,retain)NSMutableDictionary* dataDict;
 @end

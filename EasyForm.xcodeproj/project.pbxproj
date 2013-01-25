@@ -24,6 +24,11 @@
 		A4B0467416A04F0D00DF7C15 /* EFLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0467316A04F0D00DF7C15 /* EFLabelCell.m */; };
 		A4B0467716A04F2A00DF7C15 /* EFTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B0467616A04F2A00DF7C15 /* EFTextCell.m */; };
 		A4B0467A16A04F5F00DF7C15 /* UserProfiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B0467916A04F5F00DF7C15 /* UserProfiles.plist */; };
+		A4D1C17116B28D5800B8C3A6 /* EFMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D1C17016B28D5600B8C3A6 /* EFMoreCell.m */; };
+		A4D1C17416B290AC00B8C3A6 /* EFDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D1C17316B290AB00B8C3A6 /* EFDateCell.m */; };
+		A4D1C17716B290E100B8C3A6 /* EFSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D1C17616B290DF00B8C3A6 /* EFSegmentCell.m */; };
+		A4D1C17A16B2910800B8C3A6 /* EFSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D1C17916B2910700B8C3A6 /* EFSwitchCell.m */; };
+		A4D1C17D16B2913B00B8C3A6 /* EFSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D1C17C16B2913900B8C3A6 /* EFSelectCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,13 +55,23 @@
 		A4B0466C16A04E4500DF7C15 /* EFCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCellFactory.m; sourceTree = "<group>"; };
 		A4B0466E16A04E7600DF7C15 /* EFPlistLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPlistLoader.h; sourceTree = "<group>"; };
 		A4B0466F16A04E7600DF7C15 /* EFPlistLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPlistLoader.m; sourceTree = "<group>"; };
-		A4B0467116A04EB500DF7C15 /* EFPreDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFPreDefines.h; sourceTree = "<group>"; };
+		A4B0467116A04EB500DF7C15 /* EFDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFDefines.h; sourceTree = "<group>"; };
 		A4B0467216A04F0D00DF7C15 /* EFLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLabelCell.h; sourceTree = "<group>"; };
 		A4B0467316A04F0D00DF7C15 /* EFLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLabelCell.m; sourceTree = "<group>"; };
 		A4B0467516A04F2A00DF7C15 /* EFTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTextCell.h; sourceTree = "<group>"; };
 		A4B0467616A04F2A00DF7C15 /* EFTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTextCell.m; sourceTree = "<group>"; };
 		A4B0467916A04F5F00DF7C15 /* UserProfiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserProfiles.plist; sourceTree = "<group>"; };
 		A4B0467B16A04FDA00DF7C15 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A4D1C16F16B28D5400B8C3A6 /* EFMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMoreCell.h; sourceTree = "<group>"; };
+		A4D1C17016B28D5600B8C3A6 /* EFMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMoreCell.m; sourceTree = "<group>"; };
+		A4D1C17216B290AA00B8C3A6 /* EFDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFDateCell.h; sourceTree = "<group>"; };
+		A4D1C17316B290AB00B8C3A6 /* EFDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFDateCell.m; sourceTree = "<group>"; };
+		A4D1C17516B290DE00B8C3A6 /* EFSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSegmentCell.h; sourceTree = "<group>"; };
+		A4D1C17616B290DF00B8C3A6 /* EFSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSegmentCell.m; sourceTree = "<group>"; };
+		A4D1C17816B2910500B8C3A6 /* EFSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSwitchCell.h; sourceTree = "<group>"; };
+		A4D1C17916B2910700B8C3A6 /* EFSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSwitchCell.m; sourceTree = "<group>"; };
+		A4D1C17B16B2913700B8C3A6 /* EFSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSelectCell.h; sourceTree = "<group>"; };
+		A4D1C17C16B2913900B8C3A6 /* EFSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSelectCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +166,17 @@
 				A4B0467316A04F0D00DF7C15 /* EFLabelCell.m */,
 				A4B0467516A04F2A00DF7C15 /* EFTextCell.h */,
 				A4B0467616A04F2A00DF7C15 /* EFTextCell.m */,
-				A4B0467116A04EB500DF7C15 /* EFPreDefines.h */,
+				A4D1C16F16B28D5400B8C3A6 /* EFMoreCell.h */,
+				A4D1C17016B28D5600B8C3A6 /* EFMoreCell.m */,
+				A4D1C17216B290AA00B8C3A6 /* EFDateCell.h */,
+				A4D1C17316B290AB00B8C3A6 /* EFDateCell.m */,
+				A4D1C17516B290DE00B8C3A6 /* EFSegmentCell.h */,
+				A4D1C17616B290DF00B8C3A6 /* EFSegmentCell.m */,
+				A4D1C17816B2910500B8C3A6 /* EFSwitchCell.h */,
+				A4D1C17916B2910700B8C3A6 /* EFSwitchCell.m */,
+				A4D1C17B16B2913700B8C3A6 /* EFSelectCell.h */,
+				A4D1C17C16B2913900B8C3A6 /* EFSelectCell.m */,
+				A4B0467116A04EB500DF7C15 /* EFDefines.h */,
 			);
 			path = EasyForm;
 			sourceTree = "<group>";
@@ -241,6 +266,11 @@
 				A4B0467016A04E7600DF7C15 /* EFPlistLoader.m in Sources */,
 				A4B0467416A04F0D00DF7C15 /* EFLabelCell.m in Sources */,
 				A4B0467716A04F2A00DF7C15 /* EFTextCell.m in Sources */,
+				A4D1C17116B28D5800B8C3A6 /* EFMoreCell.m in Sources */,
+				A4D1C17416B290AC00B8C3A6 /* EFDateCell.m in Sources */,
+				A4D1C17716B290E100B8C3A6 /* EFSegmentCell.m in Sources */,
+				A4D1C17A16B2910800B8C3A6 /* EFSwitchCell.m in Sources */,
+				A4D1C17D16B2913B00B8C3A6 /* EFSelectCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +380,7 @@
 				A4B0465E16A04B1F00DF7C15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

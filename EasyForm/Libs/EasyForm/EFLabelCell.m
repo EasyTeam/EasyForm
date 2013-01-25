@@ -10,6 +10,11 @@
 
 @implementation EFLabelCell
 
++(void)load
+{
+    [super registerClass:[self class] forCellTypeIdentifier:@"label"];
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -17,6 +22,32 @@
         // Initialization code
     }
     return self;
+}
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        // Initialization code
+        valueLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
+        valueLabel.backgroundColor=[UIColor clearColor];
+        valueLabel.textAlignment=NSTextAlignmentLeft;
+    }
+    return self;
+}
+
+
+-(void)layoutSubviews
+{
+    
+    
+    //self.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
+    valueLabel.text=[self.cellDict objectForKey:@"value"];
+    self.accessoryView=valueLabel;
+    
+    [super layoutSubviews];
+    
+    
 }
 
 /*

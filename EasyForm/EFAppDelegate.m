@@ -24,7 +24,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.mainViewController = [[[EFMainViewController alloc] init] autorelease];
+    self.mainViewController = [[[EFMainViewController alloc] initWithPlistFile:@"UserProfiles"] autorelease];
     self.navigationController=[[[UINavigationController alloc] initWithRootViewController:self.mainViewController] autorelease];;
 
     

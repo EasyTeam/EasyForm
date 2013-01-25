@@ -9,5 +9,8 @@
 #import "EFBaseCell.h"
 
 @interface EFTextCell : EFBaseCell
+{
+     UITextField* textField;
+}
 
 @end

@@ -9,5 +9,8 @@
 #import "EFBaseCell.h"
 
 @interface EFLabelCell : EFBaseCell
+{
+     UILabel* valueLabel;
+}
 
 @end
